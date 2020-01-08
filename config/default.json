@@ -1,3 +1,4 @@
 {
-    "mongoURI": "mongodb+srv://sih2020:sih2020@sih2020-dev-jmhjv.mongodb.net/test?retryWrites=true&w=majority"
+    "mongoURI": "mongodb+srv://sih2020:sih2020@sih2020-dev-jmhjv.mongodb.net/test?retryWrites=true&w=majority",
+    "jwtSecretKey": "jwtSecretKey"
 }
