@@ -6,6 +6,7 @@ const auth = require("../../middleware/auth");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const config = require("config");
+
 // @route   POST api/login
 // @desc    Authenticate the user by token
 // @access  Public

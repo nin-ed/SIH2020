@@ -1,56 +1,73 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import React, { Component } from 'react';
-import { Button, Form, Label, Input, FormGroup} from 'reactstrap';
+import "bootstrap/dist/css/bootstrap.min.css";
+import React, { Component } from "react";
+import PropTypes from "prop-types";
 
-class Login extends Component {4
-  constructor(){
-    super();
-    this.state = {
-      email: '',
-      password: ''
+import { Button, Form, Label, Input, FormGroup } from "reactstrap";
+
+import { connect } from "react-redux";
+import { login } from "../../actions/auth";
+
+class Login extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            email: "",
+            password: ""
+        };
     }
-  }
 
-  onSubmit = e => {
-    e.preventDefault();
-  }
+    handleChange = e => {
+        const { name, value } = e.target;
+        this.setState({
+            [name]: value
+        });
+    };
+    handleSubmit = e => {
+        e.preventDefault();
+        const { email, password } = this.state;
+        this.props.login({ email, password });
+    };
 
-  onChange = e => {
+    render() {
+        return (
+            <div>
+                <Form onSubmit={this.handleSubmit}>
+                    <FormGroup>
+                        <Label for='email'>Email</Label>
+                        <Input
+                            type='email'
+                            name='email'
+                            id='email'
+                            placeholder='Email'
+                            className='mb-3'
+                            onChange={this.handleChange}
+                        />
 
-  }
-
-  render(){
-    return(
-      <div>
-      <Form onSubmit={this.onSubmit}>
-          <FormGroup>
-            <Label for='email'>Email</Label>
-            <Input
-              type='email'
-              name='email'
-              id='email'
-              placeholder='Email'
-              className='mb-3'
-              onChange={this.onChange}
-            />
-
-            <Label for='password'>Password</Label>
-            <Input
-              type='password'
-              name='password'
-              id='password'
-              placeholder='Password'
-              className='mb-3'
-              onChange={this.onChange}
-            />
-            <Button color='dark' style={{ marginTop: '2rem' }} block>
-              Login
-            </Button>
-          </FormGroup>
-        </Form>
-      </div>
-    )
-  }
+                        <Label for='password'>Password</Label>
+                        <Input
+                            type='password'
+                            name='password'
+                            id='password'
+                            placeholder='Password'
+                            className='mb-3'
+                            onChange={this.handleChange}
+                        />
+                        <Button
+                            color='dark'
+                            style={{ marginTop: "2rem" }}
+                            block
+                        >
+                            Login
+                        </Button>
+                    </FormGroup>
+                </Form>
+            </div>
+        );
+    }
 }
 
-export default Login;
+Login.propTypes = {
+    login: PropTypes.func.isRequired
+};
+
+export default connect(null, { login })(Login);

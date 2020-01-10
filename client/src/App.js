@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Route, Switch, Redirect } from "react-router-dom";
 import { Container } from "reactstrap";
 import Login from "./components/auth/Login";
@@ -8,8 +8,17 @@ import Home from "./components/Home";
 // Redux
 import store from "./store";
 import { Provider } from "react-redux";
+import setAuthToken from "./utils/setAuthToken";
+import { loadUser } from "./actions/auth";
+
+if (localStorage.token) {
+    setAuthToken(localStorage.token);
+}
 
 const App = () => {
+    useEffect(() => {
+        store.dispatch(loadUser());
+    }, []);
     return (
         <Provider store={store}>
             <Container>
