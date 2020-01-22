@@ -5,6 +5,8 @@ import Login from "./components/auth/Login";
 import Signup from "./components/auth/Signup";
 import Home from "./components/Home";
 
+import PrivateRoute from "./components/routing/PrivateRoute";
+
 // Redux
 import store from "./store";
 import { Provider } from "react-redux";
@@ -26,6 +28,10 @@ const App = () => {
                     <Route path='/home' component={Home} />
                     <Route path='/login' component={Login} />
                     <Route path='/Signup' component={Signup} />
+                    <PrivateRoute
+                        path='/private'
+                        component={() => <h1> This is 1</h1>}
+                    />
                     <Redirect to='/home' />
                 </Switch>
             </Container>

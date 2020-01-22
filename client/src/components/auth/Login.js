@@ -7,6 +7,7 @@ import { Button, Form, Label, Input, FormGroup } from "reactstrap";
 import { connect } from "react-redux";
 import { login } from "../../actions/auth";
 
+import { Redirect } from "react-router-dom";
 class Login extends Component {
     constructor(props) {
         super(props);
@@ -29,6 +30,8 @@ class Login extends Component {
     };
 
     render() {
+        const { isAuthenticated } = this.props;
+        if (isAuthenticated) return <Redirect to='/dashboard' />;
         return (
             <div>
                 <Form onSubmit={this.handleSubmit}>
@@ -67,7 +70,11 @@ class Login extends Component {
 }
 
 Login.propTypes = {
-    login: PropTypes.func.isRequired
+    login: PropTypes.func.isRequired,
+    isAuthenticated: PropTypes.bool
 };
 
-export default connect(null, { login })(Login);
+const mapStateToProps = state => ({
+    auth: state.auth.isAuthenticated
+});
+export default connect(mapStateToProps, { login })(Login);
