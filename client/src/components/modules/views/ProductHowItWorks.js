@@ -71,9 +71,8 @@ function ProductHowItWorks(props) {
               <div className={classes.item}>
                 <div className={classes.number}>1.</div>
                 <img
-                  src="/static/themes/onepirate/productHowItWorks1.svg"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQjjcPFB1bJ6N7Rxz9MxOG1cHyLnsuFdGTOFF3JTbkXDqfnQGD&s"
                   alt="suitcase"
-                  className={classes.image}
                 />
                 <Typography variant="h5" align="center">
                   Appointment every Wednesday 9am.
@@ -84,7 +83,7 @@ function ProductHowItWorks(props) {
               <div className={classes.item}>
                 <div className={classes.number}>2.</div>
                 <img
-                  src="/static/themes/onepirate/productHowItWorks2.svg"
+                  src="https://cdn4.iconfinder.com/data/icons/smashicons-delivery-2-yellow/60/11_-Fast_Delivery-_shipping_transport_delivery-512.png"
                   alt="graph"
                   className={classes.image}
                 />

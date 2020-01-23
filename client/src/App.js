@@ -7,6 +7,8 @@ import SignupFarmer from "./components/auth/SignupFarmer";
 import SignupBuyer from "./components/auth/SignupBuyer";
 import Home from "./components/Home";
 import Buyer from "./components/Buyer";
+import Farmer from "./components/farmer";
+import AddFarm from "./components/AddFarmer";
 
 import PrivateRoute from "./components/routing/PrivateRoute";
 
@@ -33,10 +35,13 @@ const App = () => {
                     <Route exact path='/Signup' component={SignUp} />
                     <Route path='/Signup/farmer' component={SignupFarmer} />
                     <Route path='/Signup/buyer' component={SignupBuyer} />
-                    <PrivateRoute
+                    <Route exact path='/buyer' component={Buyer} />
+                    <Route exact path='/farmer' component={Farmer} />
+                    <Route exact path='/farmer/AddFarm' component={AddFarm} />
+  /*                  <PrivateRoute
                         exact path='/buyer'
                         component={Buyer}
-                    />
+                    />*/
                     <Redirect to='/home' />
                 </Switch>
             </Container>
