@@ -8,6 +8,8 @@ import SignupBuyer from "./components/auth/SignupBuyer";
 import Home from "./components/Home";
 import Buyer from "./components/Buyer";
 
+import PrivateRoute from "./components/routing/PrivateRoute";
+
 // Redux
 import store from "./store";
 import { Provider } from "react-redux";
@@ -31,7 +33,10 @@ const App = () => {
                     <Route exact path='/Signup' component={SignUp} />
                     <Route path='/Signup/farmer' component={SignupFarmer} />
                     <Route path='/Signup/buyer' component={SignupBuyer} />
-                    <Route exact path='/buyer' component={Buyer} />
+                    <PrivateRoute
+                        exact path='/buyer'
+                        component={Buyer}
+                    />
                     <Redirect to='/home' />
                 </Switch>
             </Container>

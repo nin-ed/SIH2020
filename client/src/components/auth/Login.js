@@ -19,70 +19,10 @@ import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import AppAppBar from '../modules/views/AppAppBar';
+import { Redirect } from "react-router-dom";
 
 import { connect } from "react-redux";
 import { login } from "../../actions/auth";
-
-/*class Login extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            email: "",
-            password: ""
-        };
-    }
-
-    handleChange = e => {
-        const { name, value } = e.target;
-        this.setState({
-            [name]: value
-        });
-    };
-    handleSubmit = e => {
-        e.preventDefault();
-        const { email, password } = this.state;
-        this.props.login({ email, password });
-    };
-
-    render() {
-        return (
-            <div>
-                <Form onSubmit={this.handleSubmit}>
-                    <FormGroup>
-                        <Label for='email'>Email</Label>
-                        <Input
-                            type='email'
-                            name='email'
-                            id='email'
-                            placeholder='Email'
-                            className='mb-3'
-                            onChange={this.handleChange}
-                        />
-
-                        <Label for='password'>Password</Label>
-                        <Input
-                            type='password'
-                            name='password'
-                            id='password'
-                            placeholder='Password'
-                            className='mb-3'
-                            onChange={this.handleChange}
-                        />
-                        <Button
-                            color='dark'
-                            style={{ marginTop: "2rem" }}
-                            block
-                        >
-                            Login
-                        </Button>
-                    </FormGroup>
-                </Form>
-            </div>
-        );
-    }
-}
-
-*/
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
@@ -128,6 +68,7 @@ const useStyles = makeStyles(theme => ({
 }));
 
 const Login = (props) => {
+  // if (props.isAuthenticated) return <Redirect to='/dashboard' />;
   const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
   const classes = useStyles();
@@ -137,7 +78,7 @@ const Login = (props) => {
       e.preventDefault();
       props.login({ email, password });
   };
-
+  if (props.isAuthenticated) return <Redirect to='/dashboard' />;
   return (
     <React.Fragment>
       <AppAppBar/>
@@ -215,7 +156,12 @@ const Login = (props) => {
 }
 
 Login.propTypes = {
-    login: PropTypes.func.isRequired
+    login: PropTypes.func.isRequired,
+    isAuthenticated: PropTypes.bool
 };
 
-export default withRoot(connect(null, { login })(Login));
+const mapStateToProps = state => ({
+    auth: state.auth.isAuthenticated
+});
+
+export default withRoot(connect(mapStateToProps, { login })(Login));
