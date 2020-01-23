@@ -98,7 +98,7 @@ const Farmer = () => {
         }}
       >
         <div className={classes.toolbar} />
-        <Divider />
+        
         {mainListItems}
         <Divider />
         {secondaryListItems}

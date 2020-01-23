@@ -72,7 +72,7 @@ const AddFarmer = (props) => {
           }}
         >
           <div className={classes.toolbar} />
-          <Divider />
+          
           {mainListItems}
           <Divider />
           {secondaryListItems}
