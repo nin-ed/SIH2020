@@ -57,11 +57,10 @@ function ProductValues(props) {
                 alt="suitcase"
               />
               <Typography variant="h6" className={classes.title}>
-                The best luxury hotels
+                Connecting Farmers with Businesses
               </Typography>
               <Typography variant="h5">
-                {'From the latest trendy boutique hotel to the iconic palace with XXL pool'}
-                {', go for a mini-vacation just a few subway stops away from your home.'}
+                {'One stop solution for farmers who wish to put their leftover stubble to use and earn some extra cash.'}
               </Typography>
             </div>
           </Grid>
@@ -73,11 +72,10 @@ function ProductValues(props) {
                 alt="graph"
               />
               <Typography variant="h6" className={classes.title}>
-                New experiences
+                Extra Earnings for Farmers
               </Typography>
               <Typography variant="h5">
-                {'Privatize a pool, take a Japanese bath or wake up in 900m2 of garden… '}
-                {'your Sundays will not be alike.'}
+                {'Extremely useful tool for businesses to connect directly with farmers without any third party involvement ensuring maximum profits'}
               </Typography>
             </div>
           </Grid>
@@ -89,11 +87,10 @@ function ProductValues(props) {
                 alt="clock"
               />
               <Typography variant="h6" className={classes.title}>
-                Exclusive rates
+                Easy Procurement For Businesses
               </Typography>
               <Typography variant="h5">
-                {'By registering, you will access specially negotiated rates '}
-                {'that you will not find anywhere else.'}
+                {'Helps Businesses to grow'}
               </Typography>
             </div>
           </Grid>
