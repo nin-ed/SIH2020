@@ -2,8 +2,11 @@ import React, { useEffect } from "react";
 import { Route, Switch, Redirect } from "react-router-dom";
 import { Container } from "reactstrap";
 import Login from "./components/auth/Login";
-import Signup from "./components/auth/Signup";
+import SignUp from "./components/auth/SignUp";
+import SignupFarmer from "./components/auth/SignupFarmer";
+import SignupBuyer from "./components/auth/SignupBuyer";
 import Home from "./components/Home";
+import Buyer from "./components/Buyer";
 
 import PrivateRoute from "./components/routing/PrivateRoute";
 
@@ -27,10 +30,12 @@ const App = () => {
                 <Switch>
                     <Route path='/home' component={Home} />
                     <Route path='/login' component={Login} />
-                    <Route path='/Signup' component={Signup} />
+                    <Route exact path='/Signup' component={SignUp} />
+                    <Route path='/Signup/farmer' component={SignupFarmer} />
+                    <Route path='/Signup/buyer' component={SignupBuyer} />
                     <PrivateRoute
-                        path='/private'
-                        component={() => <h1> This is 1</h1>}
+                        exact path='/buyer'
+                        component={Buyer}
                     />
                     <Redirect to='/home' />
                 </Switch>
