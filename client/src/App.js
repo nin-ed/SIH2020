@@ -12,6 +12,7 @@ import AddFarm from "./components/AddFarmer";
 import Dashboard from "./components/Dashboard";
 import Logout from "./components/Logout";
 import PrivateRoute from "./components/routing/PrivateRoute";
+import Checkout from "./components/checkout/Checkout";
 
 // Redux
 import store from "./store";
@@ -48,6 +49,7 @@ const App = () => {
                     <Route exact path='/farmer/AddFarm' component={AddFarm} />
                     <Route exact path='/dashboard' component={Dashboard} />
                     <Route exact path='/logout' component={Logout} />
+                    <Route exact path='/buyer/checkout' component={Checkout} />
                     {/* <PrivateRoute exact path='/buyer' component={Buyer} /> */}
 
                     <Redirect to='/home' />
