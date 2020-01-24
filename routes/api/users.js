@@ -41,7 +41,7 @@ router.post(
             // 400 - Bad request
             return res.status(400).json({ errors: errors.array() });
         }
-        const { name, email, password } = req.body;
+        const { name, email, password, category } = req.body;
         try {
             // Check if user already exist
 
@@ -55,7 +55,8 @@ router.post(
             const newUser = new User({
                 name,
                 email,
-                password
+                password,
+                category
             });
 
             // Encrypt Password
