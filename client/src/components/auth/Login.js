@@ -79,7 +79,6 @@ const Login = props => {
     const handleSubmit = e => {
         e.preventDefault();
         props.login({ email, password });
-        props.history.push("/home");
     };
     if (props.isAuthenticated) return <Redirect to='/dashboard' />;
     return (

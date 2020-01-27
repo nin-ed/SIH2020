@@ -15,6 +15,8 @@ import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 
+import { Redirect } from "react-router-dom";
+
 //import { Button, Form, Label, Input, FormGroup } from "reactstrap";
 
 import { connect } from "react-redux";
@@ -141,7 +143,7 @@ const Signup = props => {
         let name = firstName + " " + lastName;
         props.register({ name, password, email, category: "buyer" });
     };
-
+    if (props.isAuthenticated) return <Redirect to='/dashboard' />;
     return (
         <Container component='main' maxWidth='xs'>
             <CssBaseline />
@@ -246,6 +248,11 @@ const Signup = props => {
 };
 
 Signup.propTypes = {
-    register: PropTypes.func.isRequired
+    register: PropTypes.func.isRequired,
+    isAuthenticated: PropTypes.bool.isRequired
 };
-export default connect(null, { register })(Signup);
+
+const mapStateToProps = state => ({
+    isAuthenticated: state.auth.isAuthenticated
+});
+export default connect(mapStateToProps, { register })(Signup);

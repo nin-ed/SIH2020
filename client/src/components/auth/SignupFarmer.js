@@ -19,6 +19,8 @@ import withRoot from "../modules/withRoot";
 import { connect } from "react-redux";
 import { register } from "../../actions/auth";
 
+import { Redirect } from "react-router-dom";
+
 function Copyright() {
     return (
         <Typography variant='body2' color='textSecondary' align='center'>
@@ -64,7 +66,7 @@ const Signup = props => {
         let name = firstName + " " + lastName;
         props.register({ name, password, email, category: "farmer" });
     };
-
+    if (props.isAuthenticated) return <Redirect to='/dashboard' />;
     return (
         <Container component='main' maxWidth='xs'>
             <CssBaseline />
@@ -169,6 +171,10 @@ const Signup = props => {
 };
 
 Signup.propTypes = {
-    register: PropTypes.func.isRequired
+    register: PropTypes.func.isRequired,
+    isAuthenticated: PropTypes.bool.isRequired
 };
-export default withRoot(connect(null, { register })(Signup));
+const mapStateToProps = state => ({
+    isAuthenticated: state.auth.isAuthenticated
+});
+export default withRoot(connect(mapStateToProps, { register })(Signup));

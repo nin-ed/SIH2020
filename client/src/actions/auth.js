@@ -34,6 +34,7 @@ export const register = ({
             type: REGISTER_SUCCESS,
             payload: res.data
         });
+        dispatch(loadUser());
     } catch (err) {
         dispatch({
             type: REGISTER_FAIL

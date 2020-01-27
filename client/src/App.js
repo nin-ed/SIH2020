@@ -13,7 +13,7 @@ import Dashboard from "./components/Dashboard";
 import Logout from "./components/Logout";
 import PrivateRoute from "./components/routing/PrivateRoute";
 import Checkout from "./components/checkout/Checkout";
-
+import RequestCollection from "./components/RequestCollection";
 // Redux
 import store from "./store";
 import { Provider } from "react-redux";
@@ -33,28 +33,44 @@ const App = () => {
     return (
         <Provider store={store}>
             <BrowserRouter>
-            <Container>
-                <Switch>
-                    <Route exact path='/home' component={Home} />
-                    <Route exact path='/login' component={Login} />
-                    <Route exact path='/Signup' component={SignUp} />
-                    <Route
-                        exact
-                        path='/Signup/farmer'
-                        component={SignupFarmer}
-                    />
-                    <Route exact path='/Signup/buyer' component={SignupBuyer} />
-                    <Route exact path='/buyer' component={Buyer} />
-                    <Route exact path='/farmer' component={Farmer} />
-                    <Route exact path='/farmer/AddFarm' component={AddFarm} />
-                    <Route exact path='/dashboard' component={Dashboard} />
-                    <Route exact path='/logout' component={Logout} />
-                    <Route exact path='/buyer/checkout' component={Checkout} />
-                    {/* <PrivateRoute exact path='/buyer' component={Buyer} /> */}
-
-                    <Redirect to='/home' />
-                </Switch>
-            </Container>
+                <Container>
+                    <Switch>
+                        <Route exact path='/home' component={Home} />
+                        <Route exact path='/login' component={Login} />
+                        <Route exact path='/Signup' component={SignUp} />
+                        <Route
+                            exact
+                            path='/Signup/farmer'
+                            component={SignupFarmer}
+                        />
+                        <Route
+                            exact
+                            path='/Signup/buyer'
+                            component={SignupBuyer}
+                        />
+                        <Route exact path='/buyer' component={Buyer} />
+                        <Route exact path='/farmer' component={Farmer} />
+                        <Route
+                            exact
+                            path='/farmer/AddFarm'
+                            component={AddFarm}
+                        />
+                        <Route exact path='/dashboard' component={Dashboard} />
+                        <Route exact path='/logout' component={Logout} />
+                        <Route
+                            exact
+                            path='/buyer/checkout'
+                            component={Checkout}
+                        />
+                        {/* <PrivateRoute exact path='/buyer' component={Buyer} /> */}
+                        <Route
+                            exact
+                            path='/buyer/request'
+                            component={RequestCollection}
+                        />
+                        <Redirect to='/home' />
+                    </Switch>
+                </Container>
             </BrowserRouter>
         </Provider>
     );

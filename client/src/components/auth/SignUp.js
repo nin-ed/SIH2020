@@ -1,6 +1,5 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import Link from "@material-ui/core/Link";
 import Typography from "../modules/components/Typography";
 import AppFooter from "../modules/views/AppFooter";
 import AppAppBar from "../modules/views/AppAppBar";
@@ -9,7 +8,7 @@ import ButtonGroup from "@material-ui/core/ButtonGroup";
 import ProductHeroLayout from "../modules/views/ProductHeroLayout";
 import withRoot from "../modules/withRoot";
 
-import { Redirect } from "react-router-dom";
+import { Redirect, Link } from "react-router-dom";
 
 import { connect } from "react-redux";
 const backgroundImage =
@@ -62,26 +61,28 @@ const SignUp = props => {
                     color='primary'
                     aria-label='contained primary button group'
                 >
-                    <Button
-                        color='secondary'
-                        variant='contained'
-                        size='large'
-                        className={classes.button}
-                        component='a'
-                        href='/Signup/farmer'
-                    >
-                        Farmer
-                    </Button>
-                    <Button
-                        color='secondary'
-                        variant='contained'
-                        size='large'
-                        className={classes.button}
-                        component='a'
-                        href='/Signup/buyer'
-                    >
-                        Buyer
-                    </Button>
+                    <Link to='/Signup/farmer'>
+                        <Button
+                            color='secondary'
+                            variant='contained'
+                            size='large'
+                            className={classes.button}
+                            component='a'
+                        >
+                            Farmer
+                        </Button>
+                    </Link>
+                    <Link to='/Signup/buyer'>
+                        <Button
+                            color='secondary'
+                            variant='contained'
+                            size='large'
+                            className={classes.button}
+                            component='a'
+                        >
+                            Buyer
+                        </Button>
+                    </Link>
                 </ButtonGroup>
 
                 <Typography
