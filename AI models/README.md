@@ -1,5 +1,5 @@
 ## Artificial Intelligence Models
-To get a brief account of how models were used and which were used for which purpose, please refer to **AI Documentation.pdf**.
+To get a brief account of how models were used and which were used for what purpose, please refer to **AI Documentation.pdf**.
 
 ## Images
 This folder contains all the images that were used during demo/ presentation.
