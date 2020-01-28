@@ -1,6 +1,10 @@
-# SIH2020
+# SIH 2020
+## Stubble Trouble
+### Team Name- Shooting Stars
 
-Welcome to the SIH2020 wiki!
+We are aiming to provide a marketplace and an online self-sustainable business model which would connect farmers to potential buyers of stubble. In this way the stubble burning could be stopped and could be used in an efficient way.
+
+Welcome to the SIH 2020 wiki!
 1. Fork the Repo
 2. Clone the Repo from the Fork - `git clone <link-from-fork>`
 3. `git remote add upstream https://github.com/princebansal42/SIH2020.git`
