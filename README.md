@@ -5,8 +5,8 @@
 We are aiming to provide a marketplace and an online self-sustainable business model which would connect farmers to potential buyers of stubble. In this way the stubble burning could be stopped and could be used in an efficient way. For brief information, check out
 our presentation slides naming sih2020.pptx.
 
-The members of the team are-
-Shriyansh, Prince, Prakash, Edwin, Pritika, Bharat
+The members of the team are- </br>
+Shriyansh, Prince, Prakash, Edwin, Pritika, Bharat </br>
 **The images of the team members are uploaded in the folder team_image**
 
 Welcome to the SIH 2020 wiki!
