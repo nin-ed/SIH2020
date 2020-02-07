@@ -8,15 +8,23 @@ To get a brief account of how models were used and which were used for what purp
 This folder contains all the images that were used during demo/ presentation.
 
 
-Scrapped Image
+#### Scrapped Image
 ![Scrapped Image](images/imagee2.png)
 
 
-Field Detection
+#### Filtered Image
+![Filtered Image](images/hed_filter.png)
+
+
+#### Coordinates Marked on image
+![Coordinates](images/coordinates.png)
+
+
+#### Field Detection
 ![Area Detected](images/res.png)
 
 
-Road Segmentation
+#### Road Segmentation
 ![Road Segmentation](images/segroad.png)
 
 ### Note : 
