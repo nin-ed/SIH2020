@@ -15,6 +15,19 @@ Shriyansh, Prince, Prakash, Edwin, Pritika, Bharat </br>
 ## ML Showcase Video
 ![Watch the Video](https://youtu.be/rObIjYPqxII)
 
+## Some Illustrations
+
+**Scrapped Image**
+![Scrapped Image](images/imagee2.png)
+
+**HED Filtered Image**
+![HED](images/hed_filter.png)
+
+**Coordinates Marked**
+![Coordinates](images/coordinates.ong)[![Result]](images/res.png)
+
+## Wiki
+
 Welcome to the SIH 2020 wiki!
 1. Fork the Repo
 2. Clone the Repo from the Fork - `git clone <link-from-fork>`
