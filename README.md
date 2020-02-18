@@ -24,7 +24,13 @@ Shriyansh, Prince, Prakash, Edwin, Pritika, Bharat </br>
 ![HED](AI models/images/hed_filter.png)
 
 ### Coordinates Marked
-![Coordinates](AI models/images/coordinates.ong)[![Result]](images/res.png)
+![Coordinates](AI models/images/coordinates.ong)
+
+### Result
+![Result](AI models/images/res.png)
+
+### Crop Predicted
+![Crop](AI models/images/pred.png)
 
 ## Wiki
 
