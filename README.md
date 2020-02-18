@@ -12,6 +12,9 @@ The members of the team are- </br>
 Shriyansh, Prince, Prakash, Edwin, Pritika, Bharat </br>
 **The images of the team members are uploaded in the folder team_image**
 
+## ML Showcase Video
+![Watch the Video](https://youtu.be/rObIjYPqxII)
+
 Welcome to the SIH 2020 wiki!
 1. Fork the Repo
 2. Clone the Repo from the Fork - `git clone <link-from-fork>`
