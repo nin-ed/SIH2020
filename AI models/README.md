@@ -9,7 +9,7 @@ This folder contains all the images that were used during demo/ presentation.
 
 
 #### Scrapped Image
-[![Scrapped Image]](images/imagee2.png)
+![Scrapped Image](images/imagee2.png)
 
 
 #### Filtered Image
