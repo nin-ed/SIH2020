@@ -18,13 +18,13 @@ Shriyansh, Prince, Prakash, Edwin, Pritika, Bharat </br>
 ## Some Illustrations
 
 **Scrapped Image**
-![Scrapped Image](AI Models/images/imagee2.png)
+![Scrapped Image](AI models/images/imagee2.png)
 
 **HED Filtered Image**
-![HED](AI Models/images/hed_filter.png)
+![HED](AI models/images/hed_filter.png)
 
 **Coordinates Marked**
-![Coordinates](AI Models/images/coordinates.ong)[![Result]](images/res.png)
+![Coordinates](AI models/images/coordinates.ong)[![Result]](images/res.png)
 
 ## Wiki
 
