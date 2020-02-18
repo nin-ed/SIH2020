@@ -13,7 +13,7 @@ Shriyansh, Prince, Prakash, Edwin, Pritika, Bharat </br>
 **The images of the team members are uploaded in the folder team_image**
 
 ## ML Showcase Video
-[![Watch the Video]](https://youtu.be/rObIjYPqxII)
+[![Watch the Video](https://img.youtube.com/vi/w9kYGDOrS7s/res.png)](https://youtu.be/rObIjYPqxII)
 
 ## Some Illustrations
 
