@@ -9,7 +9,7 @@ This folder contains all the images that were used during demo/ presentation.
 
 
 #### Scrapped Image
-[![Scrapped Image]](images/imagee2.png)[![Scr]](images/res.png)
+[![Scrapped Image]](images/imagee2.png)
 
 
 #### Filtered Image
@@ -24,8 +24,8 @@ This folder contains all the images that were used during demo/ presentation.
 ![Area Detected](images/res.png)
 
 
-#### Road Segmentation
-![Road Segmentation](images/segroad.png)
+#### Crop Prediction
+![Crop Prediction](images/pred.png)
 
 ### Note : 
 hed_pretrained_bsds.caffemodel is not included here as it was large enough to be included in github.
