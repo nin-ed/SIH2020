@@ -24,7 +24,7 @@ Shriyansh, Prince, Prakash, Edwin, Pritika, Bharat </br>
 ![HED](images/hed_filter.png)
 
 ### Coordinates Marked
-![Coordinates](images/coordinates.ong)
+![Coordinates](images/coordinates.png)
 
 ### Result
 ![Result](images/res.png)
