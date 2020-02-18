@@ -18,19 +18,19 @@ Shriyansh, Prince, Prakash, Edwin, Pritika, Bharat </br>
 ## Some Illustrations
 
 ### Scrapped Image
-![Scrapped Image](AI models/images/imagee2.png)
+![Scrapped Image](/AI models/images/imagee2.png)
 
 ### HED Filtered Image
-![HED](AI models/images/hed_filter.png)
+![HED](/AI models/images/hed_filter.png)
 
 ### Coordinates Marked
-![Coordinates](AI models/images/coordinates.ong)
+![Coordinates](/AI models/images/coordinates.ong)
 
 ### Result
-![Result](AI models/images/res.png)
+![Result](/AI models/images/res.png)
 
 ### Crop Predicted
-![Crop](AI models/images/pred.png)
+![Crop](/AI models/images/pred.png)
 
 ## Wiki
 
