@@ -1,9 +1,17 @@
 # SIH 2020
-## Stubble Trouble
+## Real time land usage monitoring tool using satellite data and artificial intelligence (P.S: NS275)
 ### Team Name- Shooting Stars
 
-We are aiming to provide a marketplace and an online self-sustainable business model which would connect farmers to potential buyers of stubble. In this way the stubble burning could be stopped and could be used in an efficient way. For brief information, check out
-our presentation slides naming sih2020.pptx. 
+Our idea is to develop a crop monitoring system which doesn’t require any manual effort and eliminating the middlemen and the corruption while selling the yields. We will also act as a bridge between farmers and government so that government could help the farmers in need as quickly as possible.<br>Farmers can use the platform to monitor weather conditions for minimizing related risks, plan and 
+       manage field works to prevent losses. Vegetation Indices will be used for analysis of the field and 
+       related information will be displayed for proper decision making and act as a supportive 
+       mechanism for yield prediction.<br>Insurers will be able to extract historical information about the field vegetation, climate/ weather 
+       data, and assess land usage without visiting these fields as these can be easily monitored directly 
+       from the platform.<br>Both the website and mobile app will be bilingual i.e. English and Hindi so that both the it would be 
+       suitable for all the farmers.
+
+
+ For more information, you can refer to our presentation slides.
 For ML model showcase video, you can scroll down.
 
 **The website is deployed at -** [stubble-trouble.herokuapp.com](https://stubble-trouble.herokuapp.com) 
